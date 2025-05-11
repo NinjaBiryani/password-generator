@@ -1,0 +1,56 @@
+/* 
+- PALETTE 1 - (FUNKY)
+#f61067 (red) 
+#5e239d (purple) 
+#00f0b5 (green) 
+
+- PALETTE 2 - (TECHY NAVY) 
+#011627 (navy) 
+#fdfffc (white) 
+#2ec4b6 (turquoise) 
+
+- PALETTE 3 - (TECHY GREY)
+#333333 (grey) 
+#48e5c2 (turquoise)
+#fcfaf9 (white) 
+
+*/
+
+body {
+    /* background: whitesmoke;  */
+    /* background: radial-gradient(circle at bottom right, #602f6b, #8601af );  */
+    /* background: #d9004c; 
+    background: #f08080;  */
+    overflow: hidden; 
+    height: 100vh; 
+    width: 100vw; 
+
+    /* --GRADIENT DOESN'T WORK WITH position=absolute; (??? don't know why ???) */
+    /* position: absolute;  */
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+
+    
+}
+
+#card {
+    width: 500px; 
+    min-height: 400px; 
+    padding: 15px; 
+    border-radius: 4px; 
+    font-family: 'Zain', sans-serif; 
+    /* background: #6b0cfc;  */
+    /* background: #5302ea;  */
+    background: linear-gradient(to bottom,#6b0cfc, 65%, #5302ea); 
+    background: radial-gradient(ellipse at bottom right, #6b0cfc, #5302ea 65%); 
+    /* background: #602f6b; 
+    background: #8601af;  */
+    color: white; 
+    /* border: 2px solid blue;  */
+}
+
+#title-part2 {
+    color: #00fa9a;   
+}
+

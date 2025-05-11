@@ -1,0 +1,121 @@
+body {
+    overflow: hidden; 
+    height: 100%; 
+    width: 100%; 
+    position: absolute; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+
+    background: #080808; 
+    background: #100c08; 
+}
+
+#card {
+    width: 500px; 
+    min-height: 400px; 
+    padding: 25px; 
+    border-radius: 4px; 
+    font-family: 'Orbitron', sans-serif; 
+    background: #1b1b1b;  
+    color: white; 
+
+    /* -- WHAT I WAS USING BEFORE -- */
+    /* border: 2px solid #90e0ef; 
+    box-shadow: 0 0 8px 2px #90e0ef;  */
+
+    position: relative; 
+
+    display: flex; 
+    flex-direction: column;
+}
+
+@property --angle {
+    syntax: "<angle>"; 
+    initial-value: 0deg; 
+    inherits: false; 
+}
+
+#card::after, #card::before {
+    --angle: 0deg; 
+    content: ''; 
+    position: absolute; 
+    height: 100%; 
+    width: 100%; 
+    background-image: conic-gradient(from var(--angle), transparent 55%, #90e0ef); 
+    top: 50%; 
+    left: 50%; 
+    translate: -50% -50%; 
+    z-index: -1; 
+    padding: 5px; 
+    border-radius: 4px; 
+    animation: 4s spin linear infinite; 
+}
+
+#card::before{
+    filter: blur(1.5rem); 
+    opacity: 0.5; 
+}
+
+/* @keyframes spin {
+    from {
+        --angle: 0deg; 
+    }
+    to {
+        --angle: 360deg; 
+    }
+} */
+
+#title-part1 {
+    width: 200px; 
+}
+
+#title-part2 {
+    color: #90e0ef;   
+}
+
+#slogan {
+    width: 350px; 
+}
+
+#insecure {
+    border-bottom: 2px solid #90e0ef; 
+}
+
+#generate-button {
+    margin: 15px 0 25px 0; 
+    font-family: 'Orbitron', sans-serif; 
+    font-size: 11px; 
+    width: 152.5px; 
+    height: 22.5px; 
+    background: #1b1b1b; 
+    color: white;
+    border: 1px solid #90e0ef; 
+    box-shadow: 0 0 2px #90e0ef; 
+    border-radius: 4px;  
+    text-align: center; 
+}
+
+#generate-button:hover {
+    background: #90e0ef; 
+    color: #1b1b1b; 
+}
+
+#hr-line {
+    color: white; 
+}
+
+.genBtns {
+    text-align: center; 
+    margin: 15px 10px 25px 0; 
+    font-family: 'Orbitron', sans-serif; 
+    font-size: 11px;
+    padding: 0px 7.5px; 
+    /* width: 152.5px; */
+    height: 22.5px;  
+    background: #90e0ef; 
+    color: #1b1b1b;
+    border: 1px solid #90e0ef; 
+    /* box-shadow: 0 0 2px #90e0ef;  */
+    border-radius: 4px; 
+}
