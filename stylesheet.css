@@ -57,14 +57,14 @@ body {
     opacity: 0.5; 
 }
 
-/* @keyframes spin {
+@keyframes spin {
     from {
         --angle: 0deg; 
     }
     to {
         --angle: 360deg; 
     }
-} */
+}
 
 #title-part1 {
     width: 200px; 
